@@ -1,16 +1,14 @@
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-const Noticia = () => {
+const Noticia = ({noticia}) => {
     return (
         <Card className='my-3'>
           <Card.Body>
-            <Card.Title>Noticia</Card.Title>
+            <Card.Title>{noticia.title}</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+                {noticia.description}
             </Card.Text>
-            <Button variant="primary">Ver mas</Button>
+            <a href={noticia.url} target="_blank" className='btn btn-primary'>ver mas</a>
           </Card.Body>
         </Card>
     );

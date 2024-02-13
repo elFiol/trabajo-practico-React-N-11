@@ -9,7 +9,7 @@ const FormNoticia = () => {
     const [categoriaInput, setCategoriaInput] = useState("")
 
     const API_KEY = "&apiKey=e2d1b266844542de83b64e2878769d6c"
-    const API = "https://newsapi.org/v2/top-headlines?q=Apple&from=2024-02-12&sortBy=popularity&category="
+    const API = "https://newsapi.org/v2/top-headlines?from=2024-02-12&sortBy=popularity&country=ar&category="
 
     const hacerPeticiion = async () => {
         setMostrarSpinner(true)
